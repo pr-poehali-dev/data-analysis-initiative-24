@@ -1,5 +1,11 @@
 import type { ReactNode } from "react"
 
+export interface FeatureCard {
+  icon: string
+  title: string
+  description: string
+}
+
 export interface Section {
   id: string
   title: string
@@ -7,6 +13,7 @@ export interface Section {
   content?: string
   showButton?: boolean
   buttonText?: string
+  features?: FeatureCard[]
 }
 
 export interface SectionProps extends Section {
